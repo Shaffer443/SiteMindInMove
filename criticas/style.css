@@ -1,0 +1,200 @@
+*{
+
+    max-width: 1440px;
+    max-height: 768px;
+    color: white;
+    
+
+
+}
+
+main{
+
+    /*border: 2px yellow solid;*/
+
+}
+    main h1{
+     
+        margin: 5px 0 10px 500px;
+
+    }
+
+        .nav{
+            
+            
+            margin: 0;
+
+            /*border: 2px yellow solid;*/
+        }
+
+            .nav ul{
+
+                display: flex;
+                flex-direction: row;
+                
+                
+                /*padding: 4px;*/
+
+                margin: 0 0 0 1000px;
+
+               /* border: 2px yellow solid;*/
+            }
+
+                .nav ul li{
+
+                    
+                    padding: 4px;
+                    margin-right: 10px;
+
+                    background: rgba(255, 0, 0, 0.5);
+
+                    /*text-decoration: none;*/
+                    list-style-type: none;
+
+                    border: 2px yellow solid;
+                }
+
+                    .nav ul li a{
+
+                        margin: 0px;
+
+                        text-decoration: none;
+                        /*list-style-type: none;*/
+                        cursor: pointer;
+                        
+                    }
+
+
+
+body{
+
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#959595+0,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100;Black+Gloss+Pipe */
+     /*background: #959595; /* Old browsers */
+     /*background: -moz-linear-gradient(top,  #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%); /* FF3.6-15 */
+     /*background: -webkit-linear-gradient(top,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* Chrome10-25,Safari5.1-6 */
+     /*background: linear-gradient(to bottom,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 ); /* IE6-9 */
+    background: black;
+}
+
+/* O container é uma classe por isto o .container */
+.container{ /* ajsutes gerais dos conatines */
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px; 
+    flex-wrap: wrap;
+    z-index: 1;
+
+}
+
+    .container .card{ /* ajustes dos conteiner, especificos de todos os cards */
+
+        position: relative;
+        width: 420px;
+        height: 400px;
+        margin: 30px;
+        box-shadow: 20px 20px 50px rgba(255, 0, 0, 0.5);
+        border-radius: 15px;
+        background: rgba(255,255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;  /*observar:sumindo o botão de link dos cards*/
+        align-items: center; 
+        /*border-top: 2px solid rgba(255, 255, 255, 0.5);
+        border-left: 2px solid rgba(255, 255, 255, 0.5);*/
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px); /* desfoque dentro do card, deixando de ser trnasparente e ficando fosco */
+    }
+
+        .container .card .conteudo{ /* especificamente configurações osbre o contaúdo dos cards */
+
+            padding: 20px;
+            text-align: center;
+            transform: translateY(100px); /* movimentação do card no eixo y */
+            opacity: 0; /* sumindo os textos nos cards */
+            transition: 0.5s; /* tempo da transição */
+
+
+        }
+
+            .container .card:hover .conteudo{ /* passando o mouse */
+
+                transform: translateY(0px);
+                opacity: 1;
+                background: rgba(0, 0, 0,0.4);
+
+            }
+
+.container .card img{
+    width: 100%;
+    position: absolute;
+}
+
+
+/* stylizando o card */
+
+
+.container .card .conteudo h2{
+    /* foco no h2 interno do conteudo dos cards. Sua numeração por trás do texto do card. 
+    quase uma marca d' agua */
+   
+       position: absolute;
+       top: -80px;
+       right: 30px;
+       font-size: 8cm; /* observar alterações no tamanho */
+       color: rgba(255, 255, 255, 0.05);
+       pointer-events: none;
+   
+   }
+   
+   .container .card .conteudo h3{
+   
+       font-size: 1.8em; /* observar alterações no tamanho */
+       color: #fff;
+       z-index: 1;
+   
+   
+   }
+   
+   .container .card .conteudo p{
+   
+       /* Ajustando o paragrafo */
+   
+       font-size: 20px;
+       color: #ffffff;
+       font-weight: 300;
+       padding: 1px;
+       
+
+       /*border: 2px yellow ;*/
+   
+   }
+   
+   
+   .container .card .conteudo a{
+   
+       /* ajustando o <a> */
+       position: relative;
+       display: inline-block;
+       padding: 8px 20px;
+       margin-top: 15px;
+       /*background: rgba(0, 0, 0,0.4);*/
+       color: #fff; /* cor da letra do botão */
+       text-decoration: none; /* tira o subinhados e marcações d texto no botão */
+       border-radius: 20px; /* arredondadno as bordas do botão */
+       font-weight: 500;
+       /*box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);*/
+       cursor: pointer;
+   }
+      
+        .link:hover {
+
+            
+            color: #ff0000;
+            -webkit-transform:scale(1.4);
+            
+
+        }
