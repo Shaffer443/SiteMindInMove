@@ -85,7 +85,7 @@ body{
 
     margin: 60px;
     padding: 2px;
-
+    margin-bottom: 3500px;
     position: relative;
 
     /*border: 2px yellow solid;*/
@@ -176,3 +176,25 @@ body{
     /*border: 2px yellow solid;*/
     
 }
+
+footer div{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    /*border: 2px yellow solid*/
+    
+    
+    
+}
+
+        footer h3{
+            
+            padding-right: 30px;
+            display: inline;            
+            /*border: 2px yellow solid*/
+        }
+
+              
+
+                
