@@ -1,92 +1,178 @@
+@charset "UTF-8";
+
 *{
 
     max-width: 1440px;
     max-height: 768px;
 
-    color: white;
-    /*background-color: black;*/   
+    margin: 0px;
+    padding:0px;
 
-    /*margin: 0px;
+    color: white;
+
+    
+   
+
+    /*border: 2px yellow solid;*/
+}
+
+::-webkit-scrollbar{
+    width: 30px;
+}
+
+::-webkit-scrollbar-track{
+    background: #ff0000;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #000000;
+    border-radius: 30px;
+}
+
+html, body{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+/* ----------------- Menu Superior ----------- */
+
+nav{
+
+    display: flex;
+
+    height: 100px;
+
+    background-color: black;
+
+    /*border: 2px yellow solid;*/
+
+}
+
+#logosite{
+
+    
+    margin: 6px;
     padding: 0px;
 
-    border: 2px yellow solid;*/
+
+    /*border: 2px yellow solid;*/
 }
 
-nav ul{
+    #logosite img{
+        
+        max-height: 80px;
 
-    margin-left: 1190px;
-}
+    }
 
+        nav div{
+            margin: 1px;
+            padding: 3px;
+        }
+            nav div a{
 
-    /*nav div{
-
-        margin-bottom: -50px;
-
-    }*/
-
+                margin: 1px;
+                padding: 1px;
+            }
+            
             nav div img{
 
                 max-height: 20px;
 
                 cursor: pointer;
 
-                margin-bottom: -48px;
-                padding: 1px;
-
 
             }
+            
+
+                nav ul{
+
+                    margin-top: 30px;
+                    margin-left: 850px;
+                    padding: 0px;
+        
+                }
 
 
-                    nav ul li{
-                        
-                        display: inline-block;
+                        nav ul li{
+                            
+                            display: inline-block;
 
-                        font-size: 16px;
+                            font-size: 16px;
 
-                        margin: 3px;
+                            margin: 3px;
+                            padding: 1px;
 
-                        
-                        list-style-type: none;
-                    }
+                            
+                            list-style-type: none;
+                        }
 
-                            nav ul li:hover {
+                                nav ul li:hover {
 
-                                font-size: 20px;
+                                    font-size: 20px;
 
-                                text-shadow: 5px 5px rgba(255,0,0,0.4);
+                                    text-shadow: 5px 5px rgba(255,0,0,0.4);
 
-                                cursor: pointer;
+                                    cursor: pointer;
 
-                            }
+                                }
 
 
-    nav ul li a{
+                        nav ul li a{
 
-        text-decoration: none;
+                            text-decoration: none;
 
-    } 
+                        } 
+
+                                nav ul li a img{
+
+                                    max-width: 24px;
+                                   
+                                }
+
+                                    #casa-menu{
+
+                                        max-width: 23px;
+
+                                    }
+
+                                    #star-menu{
+
+                                        max-width: 26px;
+                                        
+
+                                    }
+                                            #casa-menu:hover, #star-menu:hover {
+
+                                                    max-width: 35px;
+                                                    box-shadow: 0px 5px rgba(255,0,0,0.4);
+                                                }
+   
     
-    /*nav hr{
 
-        margin: 0px;
-    }*/
-
-body{
-
-    position: relative;
-    background-color: black;   
-
-    /*border: 2px yellow solid;*/
-}
+/* ----------------- MAIN da Crítica ----------- */
 
 .modelo{
 
-    /*overflow: auto; /* Não deixa ultrapassar a tag mãe, criando um scroll*/
-
-    margin: 60px;
-    padding: 2px;
+    height: 100vh;
+    width: 100vw;
 
     position: relative;
+
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+
+    overflow: auto;
+
+    
+
+    background-color: black;
+
+    
 
     /*border: 2px yellow solid;*/
 
@@ -97,82 +183,238 @@ body{
         text-align: center;
         margin: 10px;
 
+        margin-bottom: 50px;
+
     }
 
-        .modelo h3{
+        /*.modelo h3{
 
             text-align: right;
             font-size: 16px;
             margin-top: 50px;
+            margin-right: 15px;
         }
 
             .modelo h4{
 
                 text-align: right;
                 font-size: 12px;
-                margin-top: -10px;
+                margin-top: 5px;
+                margin-right: 15px;
                 margin-bottom: 80px;
-            }
+            }*/
 
-.imagens{
 
-    width: 60%;
-    height: auto;
-    
+#img-principal{
+
     position: relative;
-    padding-left: 20%;
-    padding-right: 20%;
-
-    /*border: 2px yellow solid;*/
-}
-
-.paragrafo{
-
-    text-align: justify;
-    font-size: 20px;
-    margin: 40px;
-
-    /*padding-left: 30%;
-    padding-right: 30%;*/
-
-
-    /*border: 2px yellow solid;*/
-}
-
-#estrelas{
 
     width: auto;
     height: auto;
 
-    margin-left: 1150px;    
+    top: 25%;
+    left: 50%;
+    
+    margin-bottom: 50px;
 
+    transform: translate(-50%,-50%);
+
+        
+    padding-left: 20%;
+    padding-right: 20%;
+
+
+    /*border: 2px yellow solid;*/
+ 
+
+}
+
+#redes-lateral{
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 50px;
+    height: 150px;
+
+    top: 50%;
+    left: 15%;
+
+    transform: translate(-50%,-50%);
+
+    /*background-color: red;*/
+
+    margin-left: -240px;
+
+    padding: 0px;
+
+    overflow: hidden;
+
+    
+
+}
+
+        #redes-lateral div a img{
+
+            position: relative;
+
+            max-height: 24px;
+
+            margin: 2px;
+            padding: -5px; 
+
+        
+            
+            
+        }
+
+.texto{
+
+    position: relative;
+
+    top: 20%;
+    left: 30%;
+    right: 25%;
+
+    transform: translate(-25%,-25%);
+
+    
+
+    text-align: justify;
+    font-size: 20px;
+    
+    width: 1000px;
+
+
+    /*border: 2px yellow solid;*/
+}
+
+    .texto p{
+
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        padding: 0px;
+        
+        
+        
+    }
+
+
+
+        .imagens{
+
+            position: relative;
+
+            width: 600px;
+            height: 400px;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%,-50%);
+            
+            margin-top: 25%;
+
+            margin-bottom: -150px;
+            /*padding: 50%;
+
+            /*border: 2px yellow solid;*/
+        }
+
+
+
+#estrelas{
+
+    position: relative;
+
+    width: auto;
+    height: auto;
+    
     display:flex;
+
 
     /*border: 2px yellow solid;*/
 }
 
     #estrelas img{
-        max-height: 32px;
+
+        max-height: 16px;
+        
+        position: relative;
+        left:0%;
+
+        margin-top: 2px;
         padding: 2px;
+
     }
 
             #estrelas p{
+
+                position: relative;
+                left:0%;
+
                 margin: 0px;
-                padding: 3px 3px 3px 8px;
-                font-size: 30px;
+                padding: 2px;
+                font-size: 20px;
             }
+
+
+    #linha-footer{
+        margin-top: 30px;
+    }  
+    
+/* ----------------- Rodapé da Crítica ----------- */
+#compartilhamento-web{
+
+    display: flex;
+
+    padding: 10px;
+}
+
+#comp-twitter{
+
+    max-height: 22px;
+    
+    margin: 1px;
+    margin-left: 5px;
+    padding: 1px;
+    
+
+}
+
+#comp-whatsapp{
+
+    max-height: 22px;
+    
+    margin: 1px;
+    margin-left: 5px;
+    padding: 1px;
+    
+
+}
+
 
 
 #trailer{
 
     position: relative;
 
+    /*top: 100%;*/
+    /*bottom: -50%;*/
+
     margin-top: 80px;
 
     padding-left: 25%;
     padding-right: 25%;
 
+    padding-bottom: 10%;
+
 
     /*border: 2px yellow solid;*/
     
 }
+
+

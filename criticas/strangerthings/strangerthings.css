@@ -126,6 +126,29 @@ nav{
 
                         } 
 
+                                nav ul li a img{
+
+                                    max-width: 24px;
+                                   
+                                }
+
+                                    #casa-menu{
+
+                                        max-width: 23px;
+
+                                    }
+
+                                    #star-menu{
+
+                                        max-width: 26px;
+                                        
+
+                                    }
+                                            #casa-menu:hover, #star-menu:hover {
+
+                                                    max-width: 35px;
+                                                    box-shadow: 0px 5px rgba(255,0,0,0.4);
+                                                }
    
     
 
@@ -214,7 +237,7 @@ nav{
     flex-direction: column;
 
     width: 50px;
-    height: 70px;
+    height: 150px;
 
     top: 50%;
     left: 15%;
@@ -237,7 +260,7 @@ nav{
 
             position: relative;
 
-            max-height: 20px;
+            max-height: 24px;
 
             margin: 2px;
             padding: -5px; 
@@ -352,6 +375,17 @@ nav{
 }
 
 #comp-twitter{
+
+    max-height: 22px;
+    
+    margin: 1px;
+    margin-left: 5px;
+    padding: 1px;
+    
+
+}
+
+#comp-whatsapp{
 
     max-height: 22px;
     

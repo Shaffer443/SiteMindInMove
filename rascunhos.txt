@@ -1,0 +1,24 @@
+ <div>
+        <a href="https://twitter.com/mindinmovie_" target="_blank"><img src="../icones/twitter(2).png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/mindinmovie_/" target="_blank"><img src="../icones/instagram(2).png"  alt="Insta"></a>
+</div>
+
+- estralas de avaliação
+    ★★★★★★★★★
+    ☆☆☆☆☆☆☆☆
+
+- Compartilhamento de redes sociais:
+    
+    #faecbook
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v14.0" nonce="rhbh0hLv"></script>
+    <div class="fb-share-button" data-href="https://www.mindinmovie.com.br/post/cr%C3%ADtica-de-stranger-things-4-volume-1" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mindinmovie.com.br%2Fpost%2Fcr%25C3%25ADtica-de-stranger-things-4-volume-1&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
+
+    #Twiiter:                    
+    <a href="https://twitter.com/intent/tweet?url=https://www.mindinmovie.com.br/post/cr%C3%ADtica-de-stranger-things-4-volume-1&text=Crítica de Stranger Things 4 Volume 1&via=@mindinmovie_&hashtags=#mindinmovie" target="_blank"><img id="comp-twitter" src="../icones/twitter(3).png" alt="twitter"></a>
+    
+    #whatsapp:
+    
+    <a href="https://api.whatsapp.com/send?text=https://www.mindinmovie.com.br/post/cr%C3%ADtica-de-stranger-things-4-volume-1&text=Crítica de Stranger Things 4 Volume 1&via=@mindinmovie_&hashtags=#mindinmovie" target="_blank"><img id="comp-whatsapp" src="../icones/whatsapp.png" alt="whatsapp"></a>
+                    
